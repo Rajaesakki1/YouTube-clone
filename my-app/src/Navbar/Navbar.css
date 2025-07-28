@@ -1,0 +1,9 @@
+.btn-smoky:active,
+.btn-smoky:focus {
+  background-color: whitesmoke !important;
+  color: black !important;
+  box-shadow: none;
+}
+.btn-smoky {
+  transition: background-color 0.2s ease;
+}
