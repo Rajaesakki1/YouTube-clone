@@ -5,10 +5,16 @@ function Home() {
     
   return (
     <>
-   <div className='vh-100 p-3 bg-light'>
-  <div className='mb-3'><Searchbar /></div>
+  <div className="vh-100 p-3 bg-light container">
+  <div className="row mb-3">
+    <div className="col-6">
+      <Searchbar />
+    </div>
+  </div>
   <div><Videos /></div>
 </div>
+
+
 
    
     </>

@@ -1,50 +1,44 @@
 import React, { useEffect, useState } from 'react';
+import './Videos.css';
 
 function Videos() {
   const [videos, setVideos] = useState([]);
 
   useEffect(() => {
-    fetch(`http://localhost:3001/videos`)
-      .then((res) => res.json()) 
-      .then((data) => {
-        console.log("Fetched videos:", data);
-        setVideos(data);
-      })
-      .catch((err) => console.log(err));
+    fetch('http://localhost:3001/videos') 
+      .then((res) => res.json())
+      .then((data) => setVideos(data))
+      .catch((err) => console.error('Error fetching videos:', err));
   }, []);
 
   return (
-
     <div className="video-list">
-      
       {videos.length > 0 ? (
         <div className="videos-container">
           {videos.map((video) => (
             <article className="single-video" key={video.id}>
-              
-              <img
-                className="thumbnail"
-                src={video.thumbnail}
-                alt={`Thumbnail for ${video.title}`}
-              />
+              {video.videoId ? (
+                <iframe
+                  width="100%"
+                  height="315"
+                  src={`https://www.youtube.com/embed/${video.videoId}`}
+                  title={video.title}
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              ) : (
+                <p style={{ color: 'red' }}>Missing video ID for {video.title}</p>
+              )}
               <div className="video-details">
-                <img
-                  className="channel-logo rounded-circle"
-                  src={video.channelLogo}
-                  alt={`${video.channel} logo`}
-                />
-                <div className="video-meta">
-                  <h4 className="video-title">{video.title}</h4>
-                  <p className="channel-name">{video.channel}</p>
-                  <p className="video-views">{video.views} • {video.uploaded}</p>
-                 
-                </div>
+                <h4>{video.title}</h4>
+                <p>{video.channel} • {video.views} • {video.uploaded}</p>
               </div>
             </article>
           ))}
         </div>
       ) : (
-        <p>No videos available.</p>
+        <p>Loading videos...</p>
       )}
     </div>
   );

@@ -1,0 +1,19 @@
+.videos-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px;
+  padding: 10px;
+}
+
+.single-video {
+  
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.single-video iframe {
+  width: 100%;
+  height: 180px; 
+  border-radius: 4px;
+}
