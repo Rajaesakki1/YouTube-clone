@@ -3,11 +3,12 @@
     {
       "id": 1,
       "title": "BLACKPINK X PUBG MOBILE - ‘Ready For Love’ M/V",
-      "channel": "CodeAcademy",
+      "channel": "Black Pink",
       "views": "1.2M views",
       "uploaded": "1 week ago",
       "thumbnail": "/assets/blackpinkpubg.png",
-      "channelLogo": "/assets/blackpink.jpg",
+        "url": "https://www.youtube.com/watch?v=gPpQNzQP6gE",
+      "channelLogo": "/assets/blackpinkp.jpg",
       "duration": "15:23"
     },
     {
@@ -77,7 +78,7 @@
       "views": "710K views",
       "uploaded": "2 weeks ago",
       "thumbnail": "/assets/jump.png",
-      "channelLogo": "/assets/blackpink.jpg",
+      "channelLogo": "/assets/blackpinkp.jpg",
       "duration": "11:57"
     }
   ],
