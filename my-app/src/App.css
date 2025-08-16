@@ -1,0 +1,13 @@
+.app-layout {
+  display: flex;
+  height: 100vh;
+  overflow-y:scroll;
+}
+
+.main-content {
+  margin-left: 5px;
+  height: 100vh;
+  overflow-y: auto;
+  padding: 20px;
+  flex: 1;
+}

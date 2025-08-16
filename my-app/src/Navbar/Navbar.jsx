@@ -3,10 +3,10 @@ import React from 'react'
 function Navbar() {
   return (
     <>
-    <diV className='m-3'>
+    <div className=' navbar-container '>
 
     
-    <div className='d-flex flex-column gap-3 '>
+    <div className='d-flex flex-column gap-2 '>
       
         <img className='m-3' style={{height:'20px',width:'100px'}}src='/assets/yyoutubeh.png'></img>
     <div><button className='btn btn-smoky'><i className="bi bi-house-door-fill"></i>  Home</button></div>
@@ -54,7 +54,7 @@ function Navbar() {
 <div><small>© 2025 Google LLC</small></div>
 
    </div>
-   </diV>
+   </div>
 
     </>
   )

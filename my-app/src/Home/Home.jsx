@@ -5,20 +5,18 @@ function Home() {
     
   return (
     <>
-  <div className="vh-100 p-3 bg-light container">
-  <div className="row mb-3">
-    <div className="col-6">
-      <Searchbar />
+ 
+    <div className="vh-100 p-3 bg-light container d-flex flex-column">
+     
+      <div style={{ height: '20%',width:'80% '}}>
+        <Searchbar />
+      </div>
+      <div style={{ height: '80%', overflowY: 'auto' }}>
+        <Videos />
+      </div>
     </div>
-  </div>
-  <div><Videos /></div>
-</div>
-
-
-
-   
-    </>
-  )
+  </>
+);
 }
 
 export default Home

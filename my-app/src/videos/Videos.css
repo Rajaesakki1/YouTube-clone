@@ -17,3 +17,61 @@
   height: 180px; 
   border-radius: 4px;
 }
+.scroll{
+  overflow-y:auto;
+}
+.videos-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 16px;
+  padding: 10px;
+}
+
+.single-video {
+  background: #f9f9f9;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.single-video:hover {
+  transform: translateY(-4px);
+}
+
+.thumbnail-wrapper {
+  position: relative;
+}
+
+.video-thumbnail {
+  width: 100%;
+  display: block;
+}
+
+.video-duration {
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  padding: 2px 6px;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+.video-logo {
+  position: absolute;
+  bottom: 4px;
+  left: 4px;
+  height: 24px;
+  width: 24px;
+  object-fit: contain;
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 50%;
+  padding: 2px;
+}
+
+.video-details {
+  padding: 8px;
+}
+

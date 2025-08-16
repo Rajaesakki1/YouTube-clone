@@ -9,8 +9,8 @@ function App() {
   return (
     <>
       <div className='d-flex vh-100 '>
-        <div className='w-25  '><Navbar/></div>
-        <div className='w-75  '><Home/></div>
+        <div className='w-25 app-layout  '><Navbar/></div>
+        <div className='w-75 main-content  '><Home/></div>
       </div>
     </>
   )
