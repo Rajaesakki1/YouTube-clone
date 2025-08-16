@@ -10,7 +10,7 @@ function App() {
     <>
       <div className='d-flex vh-100 '>
         <div className='w-25 app-layout  '><Navbar/></div>
-        <div className='w-75 main-content  '><Home/></div>
+        <div className='w-75 main-content  'style={{overflow:'hidden'}}><Home/></div>
       </div>
     </>
   )
